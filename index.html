@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手搖飲訂購系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>手搖飲訂購系統</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">菜單</a></li>
+                <li><a href="#order">訂購</a></li>
+                <li><a href="#contact">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>菜單</h2>
+            <div id="menu-items" class="menu-grid">
+                <div class="slider">
+                    <img src="images/紅茶.jfif" class="slide" alt="Image 1">
+                    <img src="images/綠茶.jfif" class="slide" alt="Image 2">
+                    <img src="images/奶茶.jfif" class="slide" alt="Image 3">
+                    <img src="images/柳橙紅.jfif" class="slide" alt="Image 4">
+                    <img src="images/美式咖啡.jfif" class="slide" alt="Image 5">
+                    <img src="images/拿鐵咖啡.jfif" class="slide" alt="Image 6">
+                    <img src="images/柳丁汁.jfif" class="slide" alt="Image 7">
+                    <img src="images/氣泡水.jfif" class="slide" alt="Image 8">
+                    <img src="images/珍珠雪碧.jfif" class="slide" alt="Image 9">
+                    <img src="images/玉米濃湯.jfif" class="slide" alt="Image 10">
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>訂購</h2>
+            <form id="order-form">
+                <label for="drink">選擇飲料:</label>
+                <select id="drink" name="drink" required>
+                    <option value="" selected disabled>請選擇需求</option>
+                    <option value="tea01">紅茶</option>
+                    <option value="tea02">綠茶</option>
+                    <option value="tea03">奶茶</option>
+                    <option value="tea04">柳橙紅</option>
+                    <option value="coffee01">美式咖啡</option>
+                    <option value="coffee02">拿鐵咖啡</option>
+                    <option value="juice01">柳丁汁</option>
+                    <option value="sparkling01">氣泡水</option>
+                    <option value="sparkling02">珍珠雪碧</option>
+                    <option value="soup">玉米濃湯</option>
+                </select>
+
+                <label for="size">選擇大小:</label>
+                <select id="size" name="size" required>
+                    <option value="" selected disabled>請選擇需求</option>
+                    <option value="small">小杯</option>
+                    <option value="medium">中杯</option>
+                    <option value="large">大杯</option>
+                </select>
+
+                <label for="sugar">選擇糖度:</label>
+                <select id="sugar" name="sugar" required>
+                    <option value="" selected disabled>請選擇需求</option>
+                    <option value="no">無糖</option>
+                    <option value="little">微糖</option>
+                    <option value="half">半糖</option>
+                    <option value="normal">全糖</option>
+                </select>
+
+                <label for="ice">選擇冰塊:</label>
+                <select id="ice" name="ice" required>
+                    <option value="" selected disabled>請選擇需求</option>
+                    <option value="no">去冰</option>
+                    <option value="little">微冰</option>
+                    <option value="normal">正常冰</option>
+                </select>
+
+                <label for="quantity">數量:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <button type="submit">提交訂單</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>聯繫我們</h2>
+            <p>電話: 02-1234-5678</p>
+            <p>地址: 台中市沙鹿區中山路100號</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 手搖飲訂購系統. 版權還沒有.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
